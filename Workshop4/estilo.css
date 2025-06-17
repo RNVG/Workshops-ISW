@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #111;
+}
+
+/* Sección Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #000, #1a1a1a);
+  color: #fff;
+  position: relative;
+}
+
+.hero .logo img {
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.hero .contenido {
+  flex: 1 1 40%;
+}
+
+.hero .contenido h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero .contenido p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #eaeaea;
+}
+
+.hero .imagen img {
+  width: 300px;
+  max-width: 100%;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Estadísticas */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(135deg, #00c9ff, #92fe9d);
+  padding: 50px 10%;
+  color: #000;
+  text-align: center;
+}
+
+.stats .stat h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.stats .stat p {
+  font-size: 1rem;
+}
+
+/* Sección ayuda */
+.ayuda {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.ayuda h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.ayuda p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.ayuda .btn {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.ayuda .btn:hover {
+  background-color: #333;
+}
+
+/* Galería / Alto rendimiento */
+.fondo-negro {
+  background-color: #000;
+  padding: 60px 10%;
+  color: #fff;
+  text-align: center;
+}
+
+.fondo-negro h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.detalle-grande {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
