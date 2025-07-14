@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aventones - Ride Details</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="top-bar">
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo Aventones" />
+          <h1>AVENTONES</h1>
+        </div>
+        <nav>
+          <a href="#">Home</a>
+          <a class="active" href="#">Rides</a>
+          <a href="#">Bookings</a>
+          <input type="text" placeholder="Search..." />
+          <div class="usuario-menu">
+            <img src="img/avatar.png" alt="Avatar" class="avatar" />
+            <div class="menu-desplegable">
+              <a href="#">Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="rides-container">
+      <h2 class="ride-title">Detalles del viaje</h2>
+
+<div class="user-info">
+  <img src="img/avatar.png" alt="avatar" class="avatar-icon" />
+  <p class="username">barroyo</p>
+</div>
+
+<form class="ride-form">
+  <div class="row">
+    <label>Salida de</label>
+    <input type="text" value="Quesada" />
+    <label>Llegada a</label>
+    <input type="text" value="Zarcero" />
+  </div>
+
+  <div class="dias">
+    <label><input type="checkbox" checked /> Lunes</label>
+    <label><input type="checkbox" checked /> Martes</label>
+    <label><input type="checkbox" checked /> Miércoles</label>
+    <label><input type="checkbox" checked /> Jueves</label>
+    <label><input type="checkbox" checked /> Viernes</label>
+    <label><input type="checkbox" checked /> Sábado</label>
+    <label><input type="checkbox" checked /> Domingo</label>
+  </div>
+
+  <div class="row">
+    <label>Hora</label>
+    <select><option>10:00 am</option></select>
+    <label>Asientos</label>
+    <select><option>2</option></select>
+    <label>Tasa</label>
+    <select><option>15</option></select>
+  </div>
+
+  <fieldset class="vehicle-details">
+    <legend>Detalles del vehículo</legend>
+    <div class="row">
+      <label>Marca</label>
+      <select><option>Nissan</option></select>
+      <label>Modelo</label>
+      <input type="text" value="March" />
+      <label>Año</label>
+      <select><option>2020</option></select>
+    </div>
+  </fieldset>
+
+ <div class="acciones">
+  <a href="#" class="cancelar">Cancelar</a>
+  <button type="submit" class="submit-btn azul">Solicitar</button>
+</div>
+</form>
+    </main>
+
+    <footer>
+      <p>Home | Rides | Bookings | Settings | Login | Register<br />© Aventones.com</p>
+    </footer>
+  </div>
+</body>
+</html>

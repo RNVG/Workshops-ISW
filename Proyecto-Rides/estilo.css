@@ -1,0 +1,397 @@
+:root {
+  --color-fondo: #ffffff;
+  --color-input: #ffffff;
+  --color-borde: #ccc;
+  --color-texto: #333;
+  --color-btn: #555;
+  --color-btn-texto: #fff;
+  --color-link: #0077cc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--color-fondo);
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.form-title {
+  text-align: center;
+  margin: 20px 0 30px;
+  font-weight: normal;
+  font-size: 22px;
+  color: var(--color-texto);
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--color-borde);
+  border-radius: 4px;
+  background-color: var(--color-input);
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row input,
+.row select {
+  flex: 1;
+}
+
+.extra-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.extra-links a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--color-btn);
+  color: var(--color-btn-texto);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+}
+
+footer {
+  margin-top: auto;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ccc;
+}
+
+footer a {
+  color: #444;
+  text-decoration: none;
+  margin: 0 5px;
+}
+/*-------------------------Login---------------- */
+body {
+  background-color: var(--color-fondo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.google-btn {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-btn {
+  background-color: #2a7ae2; /* azul brillante */
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #1b5dbf; /* azul más oscuro al pasar el mouse */
+}
+
+/* Estilo del texto de registro */
+.register-text a {
+  color: #2a7ae2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+/* ----------------- Fin de Login----------------- */
+
+/* ----------------- Sección Rides ----------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.page-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+nav a.active {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+nav input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+.usuario-menu {
+  position: relative;
+}
+
+.usuario-menu .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menu-desplegable {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.usuario-menu:hover .menu-desplegable {
+  display: block;
+}
+
+.rides-container {
+  background-color: white;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  max-width: 800px;
+}
+
+.ride-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.username {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.ride-form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ride-form label {
+  width: 100px;
+  font-weight: 500;
+}
+
+.ride-form input,
+.ride-form select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dias {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.vehicle-details {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.vehicle-details legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.cancelar {
+  color: #666;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.submit-btn {
+  padding: 8px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+   width: auto;
+  display: inline-block;
+}

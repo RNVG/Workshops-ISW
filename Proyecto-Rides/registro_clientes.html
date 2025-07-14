@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aventones - Registro</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="container">
+      <div class="logo-container">
+        <img src="img/logo.png" alt="Logo Aventones" class="logo" />
+        <h1 class="logo-text">AVENTONES</h1>
+      </div>
+
+      <h2 class="form-title">Registro de usuarios</h2>
+
+      <form>
+        <div class="row">
+          <input type="text" placeholder="Primer nombre" required />
+          <input type="text" placeholder="Su apellido" required />
+        </div>
+        <input type="email" placeholder="Correo electrónico" required />
+        <div class="row">
+          <input type="password" placeholder="Contraseña" required />
+          <input type="password" placeholder="Repito contraseña" required />
+        </div>
+        <input type="text" placeholder="Dirección" />
+        <div class="row">
+          <select required>
+            <option>País</option>
+            <option value="CR">Costa Rica</option>
+          </select>
+          <input type="text" placeholder="Estado" />
+        </div>
+        <div class="row">
+          <input type="text" placeholder="Ciudad" />
+          <input type="tel" placeholder="Número de teléfono" />
+        </div>
+
+        <div class="extra-links">
+          <span>¿Ya un usuario? <a href="#">Inicie sesión</a></span>
+          <span>Registrar como conductor <a href="#">aquí</a></span>
+        </div>
+
+        <button type="submit" class="submit-btn">Regístrese</button>
+      </form>
+    </div>
+
+    <footer>
+      <a href="#">Hogar</a> |
+      <a href="#">Pases</a> |
+      <a href="#">Reservas</a> |
+      <a href="#">Ajustes</a> |
+      <a href="#">Registro</a>
+    </footer>
+  </div>
+</body>
+</html>
