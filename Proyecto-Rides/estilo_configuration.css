@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+/* barra de navegacion */
+.navbar {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-section img {
+  width: 40px;
+  height: 40px;
+}
+
+.left-section span {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.right-section input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile-menu {
+  position: relative;
+}
+
+.profile-menu img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.dropdown {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 35px;
+  background-color: white;
+  border: 1px solid #ccc;
+  display: none;
+  padding: 0;
+  width: 130px;
+  z-index: 10;
+}
+
+.profile-menu:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+/* contenido principal */
+main {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 32px;
+  color: #555;
+  font-family: 'Segoe UI', sans-serif; 
+  position: relative;
+  margin-bottom: 40px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 120px;  
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px auto 0;
+}
+
+.config-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.config-form input,
+.config-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cancel {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.cancel:hover {
+  text-decoration: underline;
+}
+
+.save {
+  padding: 10px 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.save:hover {
+  background-color: #2980b9;
+}
+
+/* pie de pagina*/
+footer {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  margin-top: 60px;
+  border-top: 1px solid #ccc;
+}
+
+.footer-links {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  color: gray;
+  margin: 0;
+}
